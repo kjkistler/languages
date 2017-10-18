@@ -135,3 +135,28 @@ In this case:
 1. `Math.random` generates a random number between 0 and 1.
 2. Multiply that number by 50, so now we have a number between 0 and 50.
 3. `Math.floor` rounds the number down to the nearest whole number.
+
+## Comments
+
+As we write JavaScript, we can create comments in our code.
+
+Programs do not evaluate comments when you run them. In other words, they exist just for human readers. Good comments are useful for you and other developers, because they describe what the code does.
+
+There are two types of code comments in JavaScript:
+
+* A single line comment will comment out a single line and is denoted with two forward slashes // preceding a line of JavaScript code.
+
+```
+// The first 5 decimals of pi
+console.log('Pi is equal to ' + 3.14159);
+```
+
+* A multi-line comment will comment out multiple lines and is denoted with /* to begin the comment, and */ to end the comment.
+
+```
+/*
+console.log('All of this code');
+console.log('Is commented out');
+console.log('And will not be executed);
+*/
+```
