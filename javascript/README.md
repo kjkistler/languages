@@ -69,3 +69,37 @@ console.log(9 / 3); // Equals 3
 
 In the example above, each line uses a different mathematical operator to log a value to the console.
 
+## Properties
+
+When you introduce a new piece of data into a JavaScript program, the browser saves it as an *instance* of the data type. An instance is an individual case (or object) of a data type.
+
+JavaScript will save a new piece of data, like 'Hello', as a string instance in the computer's memory. Another example, the number 40.7, is stored as an instance of the number data type.
+
+An instance, like the string 'Hello', has additional information attached to it.
+
+For example, every string instance has a property called `length` that stores the number of characters in it. You can retrieve property information by appending the string with a period and the property name:
+
+```
+console.log('Hello'.length);
+```
+
+In the example above, the value saved to the length property is retrieved from the string, 'Hello'. The program prints 5 to the console, because Hello has five characters in it.
+
+## Built-in Methods
+
+While the length of a string is calculated when an instance is created, a string instance also has *methods* that calculate new information as needed. When these built-in methods are called on an instance, they perform actions that generate an output.
+
+Built-in methods are called, or used, by appending an instance with a period, the name of the method, and opening (() and closing ()) parentheses. Consider the examples below:
+
+```
+console.log('Hello'.toUpperCase());  // 'HELLO'
+console.log('Hey'.startsWith('H'));  // true
+```
+
+Let's look at each line separately:
+
+* On the first line, the .toUpperCase() method is called on the string instance 'Hello'. The result is logged to the console. This method returns a string in all capital letters: 'HELLO'.
+
+* On the second line, the .startsWith() method is called on the string instance "Hey". This method also accepts the character 'H' as an input between the opening and closing parentheses. Since the string 'Hey' does start with the letter 'H', the method returns the boolean true.
+
+You can find a list of built-in string methods in the [JavaScript documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/prototype). Developers use documentation as a reference tool. It describes JavaScript's keywords, methods, and syntax.
