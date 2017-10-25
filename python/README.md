@@ -152,3 +152,22 @@ spam = 10%3
 
 print spam
 ```
+
+## The Meal
+
+Now let's apply the concepts from the previous section to a real world example.
+
+You've finished eating at a restaurant, and received this bill:
+
+* Cost of meal: $44.50
+* Restaurant tax: 6.75%
+* Tip: 15%
+
+You'll apply the tip to the overall cost of the meal (including tax).
+
+## The Tax
+
+Now let's create a variable for the tax percentage.
+
+The tax on your receipt is 6.75%. You'll have to divide 6.75 by 100 in order to get the decimal form of the percentage. (See the Hint if you would like further explanation.)
+You'll apply the tip to the overall cost of the meal (including tax).
