@@ -26,6 +26,11 @@ console.log(2/0);  // Prints "Infinity"
 let n;
 console.log(n);  // Prints "undefined"
 ```
+### The Console Object
+
+The Console object provides access to the browser's debugging console (e.g., the Web Console in Firefox). The specifics of how it works vary from browser to browser, but there is a de facto set of features that are typically provided.
+
+For more information, see [Console](https://developer.mozilla.org/en-US/docs/Web/API/Console).
 
 ## Data Types
 
