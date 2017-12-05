@@ -39,10 +39,10 @@ Data types are the building blocks of all languages and essential pieces of any 
 Below are examples of four *primitive* data types that lay the foundation for all JavaScript programs. Primitive data types, as their name implies, are the simplest built-in forms of data.
 
 ```
-console.log('New York City');
-console.log(40.7);
-console.log(true);
-console.log(null);
+console.log('New York City');  // string
+console.log(40.7);  // number
+console.log(true);  // boolean
+console.log(null);  // null
 ```
 
 In the example above, the computer logs each of the four *primitive* data types to the console. The types include:
@@ -66,10 +66,10 @@ JavaScript supports the following math operators:
 These all work how you might guess:
 
 ```
-console.log(3 + 4); // Equals 7
-console.log(5 - 1); // Equals 4
-console.log(4 * 2); // Equals 8
-console.log(9 / 3); // Equals 3
+console.log(3 + 4); // Logs 7 to the console
+console.log(5 - 1); // Logs 4 to the console
+console.log(4 * 2); // Logs 8 to the console
+console.log(9 / 3); // Logs 3 to the console
 ```
 
 In the example above, each line uses a different mathematical operator to log a value to the console.
