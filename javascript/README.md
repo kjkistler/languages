@@ -121,7 +121,7 @@ Let's see how you call the `.random()` method from the `Math` library:
 console.log(Math.random()); // random number between 0 and 1
 ```
 
-In the example above, we called the `.random()` method by appending the library name with a period, the name of the method, and opening (() and closing ()) parentheses. This method returns a random number between 0 and 1. This code prints a random number between 0 and 1.
+In the example above, we called the `.random()` method by appending the library name with a period, the name of the method, and `()`. This method returns a random number between 0 and 1. The full line of code logs the random number between 0 and 1 to the console.
 
 To generate a random number between 0 and 50, we could multiply this result by 50, like so:
 
@@ -129,7 +129,7 @@ To generate a random number between 0 and 50, we could multiply this result by 5
 Math.random() * 50;
 ```
 
-The answer in the example above will most likely be a decimal. To ensure the answer is a whole number, JavaScript provides a built-in method called `Math.floor()`. `Math.floor()` takes a decimal number, and rounds down to the nearest whole number. You can use `Math.floor()` to round a random number like this:
+The answer in the example above will most likely be a decimal. To ensure the answer is a whole number, JavaScript provides a built-in method called `Math.floor()`. `Math.floor()` takes a decimal number, and rounds down to the nearest whole number. You can use `Math.floor()` to round down a random number like this:
 
 ```
 Math.floor(Math.random() * 50);
@@ -149,14 +149,14 @@ Programs do not evaluate comments when you run them. In other words, they exist 
 
 There are two types of code comments in JavaScript:
 
-* A single line comment will comment out a single line and is denoted with two forward slashes // preceding a line of JavaScript code.
+* A single line comment will comment out a single line and is denoted with two forward slashes `//` preceding a line of JavaScript code.
 
 ```
 // The first 5 decimals of pi
 console.log('Pi is equal to ' + 3.14159);
 ```
 
-* A multi-line comment will comment out multiple lines and is denoted with /* to begin the comment, and */ to end the comment.
+* A multi-line comment will comment out multiple lines and is denoted with `/*` to begin the comment and `*/` to end the comment.
 
 ```
 /*
@@ -165,72 +165,68 @@ console.log('Is commented out');
 console.log('And will not be executed);
 */
 ```
-## Variables
+## Constants and Variables
 
-Programmers use variables to write code that is easy to understand and repurpose.
+Programmers use constants and variables to write code that is easy to understand and repurpose.
 
-Imagine you're writing a weather app. Your thermometer outside reports the temperature in Celsius, but your goal is to record the temperature in Fahrenheit.
+Imagine you're writing a weather application. Your thermometer outside reports the temperature in Celsius, but your goal is to record the temperature in Fahrenheit.
 
 You write a program that takes a temperature of 15 degrees Celsius and calculates the temperature in Fahrenheit.
 
-Once you've done this though, you see the temperature now reads 16 degrees Celsius. To find Fahrenheit again, you'd need to write a whole new program to convert 16 degrees Celsius to Fahrenheit.
+Once you've done this, though, you see the temperature now reads 16 degrees Celsius. To find Fahrenheit again, you'd need to write a whole new program to convert 16 degrees Celsius to Fahrenheit.
 
-That's where variables come in. Variables allow us to assign data to a word and use the word to reference the data. If the data changes (like degrees Celsius) we can replace the variable's value instead of re-writing the program.
+That's where variables come in. Variables allow us to assign data to a word and use the word to reference the data. If the data changes (like degrees Celsius) while the program runs, we can change the variable's value instead of re-writing the program.
 
-In this lesson you will learn about two ways to declare variables: `let` and `const`.
+In this lesson you will learn about two ways to store values: as constants by using `const` and as variables by using `let`.
 
-## Create a Variable: const
+## Create a Constant Value: `const`
 
-Let's dive in and see a variable in the wild. Here is how you declare a constant variable:
+Let's dive in and see a constant value in the wild. Here is how you declare a constant:
 
 ```
 const myName = 'Arya';
-console.log(myName);
-// Output: Arya
+console.log(myName);  // Output: Arya
 ```
 
 Let's consider the example above:
 
-`const`, short for constant, is a JavaScript keyword that creates a new variable with a value that cannot change.
-`myName` is the variable's name. Notice that the word has no spaces, and we capitalized the N. Capitalizing in this way is a standard convention in JavaScript called camelCasing, because the capital letters look like the humps on a camel's back.
-`=` is the assignment operator. It assigns the value ('Arya') to the variable (myName).
-'Arya' is the value assigned (=) to the variable myName.
-After the variable is declared, we can print 'Arya' to the console with: `console.log(myName)`.
+`const`, short for *constant*, is a JavaScript keyword that creates a new constant value that cannot change while the program runs.
+`myName` is the constant's name. Notice that the word has no spaces, and we capitalized the N. Capitalizing in this way is a standard convention in JavaScript called "camelCasing," because the capital letters look like the humps on a camel's back.
+`=` is the assignment operator. It assigns the value ('Arya') to the constant (`myName`).
+'Arya' is the value assigned (=) to the constant `myName`.
+After the constant is declared, we can log 'Arya' to the console with `console.log(myName)`.
 
-You can save any data type in a variable. For example, here we save numbers:
+You can store any data type in a constant. For example, here we store a number:
 
 ```
 const myAge = 11;
-console.log(myAge);
-// Output: 11
+console.log(myAge);  // Log 11 to the console
 ```
 
-In the example above, on line 1 the `myAge` variable is set to 11. Below that, `console.log()` is used to print 11 to the console.
+In the example above, on line 1, the `myAge` constant is set to 11. Below that, `console.log()` is used to log 11 to the console.
 
-## Create a Variable: let
+## Create a Variable Value: `let`
 
-Constant variables, as their name implies, are constant — you cannot assign them a different value.
+Constant values, as their name implies, are constant — you cannot assign them a different value.
 
-Let variables however, can be reassigned.
+Variables, however, can be changed while a program runs.
 
 ```
 let meal = 'Enchiladas';
-console.log(meal);
+console.log(meal);  // Logs 'Enchiladas' to the console
 meal = 'Tacos';
-console.log(meal);
-// output: Enchiladas
-// output: Tacos
+console.log(meal);  // Logs 'Tacos' to the console
 ```
 
-In the example above, the `let` keyword is used to create the meal variable with the string 'Enchiladas' saved to it. On line three, the meal variable is changed to store the string 'Tacos'.
+In the example above, the `let` keyword is used to create the `meal` variable with the string 'Enchiladas' stored in it. On line three, the `meal` variable is changed to store the string 'Tacos'.
 
-You may be wondering, when to use `const` vs `let`. In general, only use `const` if the value saved to a variable does not change in your program.
+You may be wondering when to use `const` vs `let`. In general, only use `const` if you know that the value must never change during the running of your program.
 
 ## Undefined
 
 What happens if you create a variable, but don't assign it a value?
 
-JavaScript creates space for this variable in memory and sets it to undefined. Undefined is the fifth and final primitive data type. JavaScript assigns the undefined data type to variables that are not assigned a value.
+JavaScript creates space for this variable in memory and sets it to *undefined*. Undefined is the fifth and final primitive data type. JavaScript assigns the undefined data type to variables that are not assigned a value.
 
 ```
 let whatAmI;
@@ -248,31 +244,31 @@ x = x + 1;
 ```
 In the example above, we created the variable `x` with the number 4 assigned to it. On the following line, `x = x + 1` increases the value of `x` from 4 to 5.
 
-Notice, on line two in the example above, to increment `x` by one we had to write the `x` variable on the left and right side of the assignment operator (`=`). Using a variable twice in one expression is redundant and confusing.
+Notice, on line two in the example above, to increment `x` by 1 we had to write the `x` variable on the left and right side of the assignment operator (`=`). Using a variable twice in one expression is redundant and confusing.
 
 To address this, JavaScript has a collection of built-in mathematical assignment operators that make it easy to calculate a new value and assign it to the same variable without writing the variable twice. See examples of these operators below.
 
 ```
 let x = 4;
-x += 2;  // x equals 6
+x += 2;  // x now equals 6
 
 let y = 4;
-y -= 2;  // y equals 2
+y -= 2;  // y now equals 2
 
 let z = 4;
-z *= 2;  // z equals 8
+z *= 2;  // z now equals 8
 
 let r = 4;
-r++;  // r equals 5
+r++;  // r now equals 5
 
 let t = 4;
-t--;  // t equals 3
+t--;  // t now equals 3
 ```
 
-In the example above, operators are used to calculate a new value and assign it to the same variable. Let's consider the first three and last two operators separately:
+In the example above, operators are used to calculate a new value and assign it to the same variable. Let's consider the first three and the last two operators separately:
 
 1. The first three operators (`+=`, `-=`, and `*=`) perform the mathematical operation of the first operator (`+`, `-`, or `*`) using the number on the right, then assign the new value to the variable.
-2. The last two operators are the increment (`++`) and decrement (`--`) operators. These operators are responsible for increasing and decreasing a number variable by one, respectively.
+2. The last two operators are the increment (`++`) and decrement (`--`) operators. These operators are responsible for increasing and decreasing a number variable by 1, respectively.
 
 ## String Interpolation
 
@@ -284,11 +280,10 @@ The `+` operator, known until now as the addition operator, is used to interpola
 
 ```
 let myPet = 'armadillo';
-console.log('I own a pet ' + myPet + '.'); 
-// Output: 'I own a pet armadillo.'
+console.log('I own a pet ' + myPet + '.');  // Log 'I own a pet armadillo.' to the console
 ```
 
-In the example above, we saved the value `'armadillo'` to the `myPet` variable. On the second line, the `+` operator is used to combine three strings: `I own a pet`, the value saved to `myPet`, and `..` We log the result of this interpolation to the console as:
+In the example above, we saved the value `'armadillo'` to the `myPet` variable. On the second line, the `+` operator is used to combine three strings: `I own a pet`, the value saved to `myPet`, and `.`. We log the result of this interpolation to the console as:
 
 ```
 I own a pet armadillo.
@@ -301,14 +296,13 @@ In the newest version of JavaScript (ES6), we can insert variables into strings 
 1. Instead of using quotes around the string, use backticks (this key is usually located on the top of your keyboard, left of the 1 key).
 2. Wrap your variable with `${myVariable}`, followed by a sentence. No `+`s necessary.
 
-ES6 string interpolation is easier than the method you used last exercise. With ES6 interpolation we can insert variables directly into our text.
+ES6 string interpolation is easier than the method you used in the last exercise. With ES6 interpolation, we can insert variables directly into our text.
 
 It looks like this:
 
 ```
 let myPet = 'armadillo'
-console.log(`I own a pet ${myPet}.`)
-// Output: 'I own a pet armadillo.'
+console.log(`I own a pet ${myPet}.`);  // Log 'I own a pet armadillo.' to the console
 ```
 
 In the example above, the backticks (\`) wrap the entire string. The variable (`myPet`) is inserted using `${}`. The resulting string is:
@@ -321,7 +315,7 @@ I own a pet armadillo.
 
 In this lesson, we'll explore how we can use the building blocks of JavaScript to write programs that make decisions.
 
-Control flow statements enable JavaScript programs to make decisions by executing code based on a condition. If a given condition is true, we execute one block of code. If the statement is false, we execute another block of code. For instance, if we were making a game in which the user had to choose which door to enter, we'd need a way for the program to know what to do once the user was in the next room.
+Control flow statements enable JavaScript programs to make decisions by executing code based on a condition. If a given condition is true, we execute a particular block of code. If the statement is false, we execute a different block of code. For instance, if we were making a game in which the user had to choose which of two doors to enter, we'd need a way for the program to know what to do once the user chose a door.
 
 In this lesson, we'll learn how to make decisions with JavaScript and how it can control the program's flow.
 
@@ -329,11 +323,11 @@ In this lesson, we'll learn how to make decisions with JavaScript and how it can
 
 The core task of programming is writing lists of instructions for computers, or translating our ideas from human-speak to computer-speak.
 
-Let's learn how we can ask JavaScript to think like us and make decisions the way we do.
+Let's learn how we can ask JavaScript to think like we do and make decisions the way we do.
 
-We'll start with human-speak. Many decisions we make everyday boil down to this sentence in some form:
+We'll start with human-speak. Many decisions we make every day boil down to this sentence in some form:
 
-"If something is true, let's do option 1, or else, if it is false, let's do option 2."
+"If something is true, do option 1, or else, do option 2."
 
 This sentence looks fairly similar when we write it with JavaScript. See for yourself:
 
@@ -346,19 +340,21 @@ if (needsCoffee === true) {
 }
 ```
 
-1. Lines of code between curly braces are called blocks. if/else statements have two code blocks. If the variable `needsCoffee` is true, the program will run the first block of code. Otherwise, it will run the other block of code.
+1. Lines of code between curly braces are called *blocks*. if/else statements have two code blocks. If the variable `needsCoffee` is true, the program will run the first block of code. "Or else," it will run the other block of code.
 
-2. `needsCoffee` is the condition we are checking inside the `if`'s parentheses. Since it is equal to true, our program will run the code between the first opening curly brace `{` (line 2) and the first closing curly brace `}` (line 4). It will ignore the else `{ ... }` part. In this case, we'd see `Finding coffee` log to the console.
+2. `needsCoffee` is the condition we are checking inside the `if`'s parentheses. Since it's equal to true, our program will run the code between the first opening curly brace `{` (line 2) and the first closing curly brace `}` (line 4). It will ignore the else `{ ... }` part. In this case, we'd see `Finding coffee` logged to the console.
 
-3. If `needsCoffee` were false, only the `console.log()` statement in the else block would be executed.
+3. If `needsCoffee` were false, only the `console.log()` statement in the `else` block would be executed.
 
 if/else statements are how programs can process yes/no questions programmatically.
 
 ## True and False Values
 
-In the previous exercise, we wrote if/else statements. If a given condition were true, one block of code would run. If that condition were false, a different block of code would run. However, there are data types that are not booleans. Let's explore the concepts of true and false in variables that contain other data types, including strings and numbers.
+In the previous exercise, we wrote if/else statements. If a given condition were true, one block of code would run. If that condition were false, a different block of code would run. 
 
-In JavaScript, all variables and conditions have a truthy or falsy value.
+However, there are data types that are not booleans. Let's explore the concepts of true and false in variables that contain other data types, including strings and numbers.
+
+In JavaScript, all variables and conditions have a "truthy" or "falsy" value.
 
 ```
 let variableOne = 'I Exist!';
@@ -371,9 +367,9 @@ if (variableOne) {
 
 In the first line of the program above, a variable is created and set. The value of this variable is a string rather than a boolean. How does this program determine which code block to run?
 
-The second line of this program checks a condition `if (variableOne)`. In the previous exercise, we checked if a variable was equal to true or false. By only writing the name of the variable as the condition, we are checking the *truthiness* of `variableOne`. In this case, `variableOne` contains a truthy value.
+The second line of this program checks a condition `if (variableOne)`. In the previous exercise, we checked if a variable was equal to true or false. By only writing the name of the variable as the condition, we are checking the *truthiness* of `variableOne`. In this case, `variableOne` contains a "truthy" value.
 
-If we changed `if (variableOne)` to, say, `if (variableTwo)`, that condition would evaluate to falsy because we have not created a variable called `variableTwo` in this program. In other words, `variableOne` is truthy and `variableTwo` is falsy.
+If we changed `if (variableOne)` to, say, `if (variableTwo)`, that condition would evaluate to "falsy" because we have not created a variable called `variableTwo` in this program. In other words, `variableOne` is truthy and `variableTwo` is falsy.
 
 All variables that have been created and set are truthy (and will evaluate to true if they are the condition of a control flow statement) unless they contain one of the seven values listed below:
 
@@ -383,9 +379,9 @@ All variables that have been created and set are truthy (and will evaluate to tr
 * null
 * undefined
 * NaN (Not a Number)
-* document.all (something you will rarely encounter)
+* document.all (something you'll rarely encounter)
 
-There is an important distinction between a variable's value and its truthiness: `variableOne`'s value is `'I exist'` because that is the data saved to the variable. `variableOne` is truthy because it exists and does not contain any of the seven falsy values listed above.
+There's an important distinction between a variable's value and its truthiness: `variableOne`'s value is `'I exist'` because that is the data stored in the variable. `variableOne` is truthy because it exists and does not contain any of the seven falsy values listed above.
 
 ## True and False Values II
 
