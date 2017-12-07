@@ -38,4 +38,4 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 
 ## Test link
 
-Go to the [JavaScript page](https://github.com/kjkistler/languages/tree/master/javascript/README.md).
+Go to the [JavaScript page](https://kjkistler.github.io/languages/javascript/README.md).
