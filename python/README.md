@@ -4,7 +4,7 @@
 
 ### Print to the console
 ```
-print ("Welcome to Python!")
+print("Welcome to Python!")
 ```
 ### Declaring and initializing variables
 
@@ -13,7 +13,7 @@ print ("Welcome to Python!")
 my_variable = 10
 
 # Print the variable to the console
-print (my_variable)
+print(my_variable)
 ```
 ### Booleans
 
@@ -29,9 +29,9 @@ my_float = 1.23
 my_bool = True
 
 # Print the variables
-print (my_int)
-print (my_float)
-print (my_bool)
+print(my_int)
+print(my_float)
+print(my_bool)
 ```
 
 ### Reassigning variables
@@ -49,7 +49,7 @@ my_int = 3
 # Here's some code that will print my_int to the console:
 # The print keyword will be covered in detail soon!
 
-print (my_int)
+print(my_int)
 ```
 
 ### Whitespace
@@ -62,7 +62,7 @@ def spam():
 eggs = 12
 return eggs
         
-print (spam())
+print(spam())
 ```
 
 ### Whitespace Means Right Space
@@ -83,7 +83,7 @@ def spam():
   eggs = 12
   return eggs
         
-print (spam())
+print(spam())
 ```
 
 ### The Interpreter
@@ -144,13 +144,13 @@ Notice that we use ** instead of * or the multiplication operator.
 Our final operator is modulo. Modulo returns the remainder from a division. So, if you type 3 % 2, it will return 1, because 2 goes into 3 evenly once, with 1 left over.
 
 ```
-#Set spam equal to 1 using modulo on line 3!
+# Set spam equal to 1 using modulo on line 3!
 
 spam = 10%3
 
 # Write your code above!
 
-print (spam)
+print(spam)
 ```
 
 ## The Meal
