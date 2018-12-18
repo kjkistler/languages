@@ -42,12 +42,11 @@ print(my_bool)
 
 my_int = 7
 
-# Change the value of my_int to 3 on line 8!
+# Change the value of my_int to 3
 
 my_int = 3
 
 # Here's some code that will print my_int to the console:
-# The print keyword will be covered in detail soon!
 
 print(my_int)
 ```
