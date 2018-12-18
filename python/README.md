@@ -115,7 +115,7 @@ Holy Grail.
 ```
 ### Math
 
-Great! Now let's do some math. You can add, subtract, multiply, divide numbers like this
+Great! Now let's do some math. You can add, subtract, multiply, and divide numbers like this:
 
 ```
 addition = 72 + 23
