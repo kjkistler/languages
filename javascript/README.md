@@ -331,7 +331,7 @@ We'll start with human-speak. Many decisions we make every day boil down to this
 
 This sentence looks fairly similar when we write it with JavaScript. See for yourself:
 
-```
+```javascript
 let needsCoffee = true;
 if (needsCoffee === true) {
     console.log('Finding coffee');
