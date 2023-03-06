@@ -1,46 +1,18 @@
 # Python
 
-in this course I'm gonna teach you everything you need to know to get started programming in Python 
+In this course, I'm gonna teach you everything you need to know to get started programming in Python. Now, Python is one of the most popular programming languages out there, and it's by far one of the most sought-after for jobs.
 
-now python is one of the most popular programming languages out there and it's by far one of the most sought-after for jobs
+And so, if you're trying to get a job or you're trying to automate your life or you're trying to write awesome scripts to do a bunch of different things, then Python's for you. Honestly, more and more developers every day are moving their projects over to Python because it's such a powerful and easy-to-use language.
 
-and so if you're trying to get a job or you're trying to you know automate your life or you're trying to write awesome scripts to do a bunch of different things then pythons for you 
+A lot of programming languages out there just aren't very beginner-friendly. There's a lot of syntax, there's a lot of little things that if you get wrong, the program will yell at you.
 
-honestly more and more developers everyday are moving their projects over to Python because it's such a powerful and it's such an easy to use language 
+Python is the complete opposite of that. You basically just type out what you want to do, and Python does it. It's that simple. There's not a whole lot of syntax to learn. The learning curve is literally zero. You jump in, and you can start writing your first program in seconds.
 
-a lot of programming languages out there just aren't very beginner friendly 
+In this course, I'm gonna teach you guys everything you need to know to get started in Python. I designed this course especially for Python, and each lesson has been specially designed with examples that will help you along the way.
 
-there's a lot of syntax there's a lot of like little things that if you get wrong the program will yell at you 
+With so many people starting to learn Python, the question isn't "Why should you learn Python?", the question is "Why *shouldn't* you?" And I think for a lot of people, the reason they might not want to learn Python is because they're intimidated or they're afraid that it's gonna be too hard. Trust me, I am going to hold your hand through this entire course. We're gonna talk about all the core concepts in Python. We're gonna look at everything you need to know to start programming in Python and start being confident and start writing scripts and start writing programs that are awesome and doing cool things in your life.
 
-Python is the complete opposite of that 
-
-you basically just type out what you want to do and Python does it 
-
-it's that simple 
-
-there's not a whole lot of syntax to learn 
-
-the learning curve is literally zero 
-
-you jump in you can start writing your first program in seconds 
-
-in this course I'm gonna teach you guys everything you need to know to get started in Python 
-
-I designed this course especially for Python and each lesson has been specially designed with examples that will help you along the way 
-
-with so many people starting to learn Python the question isn't why should you learn Python the question is why shouldn't you 
-
-and I think for a lot of people the reason they might not want to learn Python is because they're intimidated or they're afraid that it's gonna be too hard 
-
-trust me I am going to hold your hand through this entire course 
-
-we're gonna talk about all the core concepts in Python 
-
-we're gonna look at everything you need to know to start programming in Python and start being confident and start writing scripts and start writing programs that are awesome and doing cool things in your life 
-
-anyway I'm super pumped to be teaching you guys Python 
-
-I can't wait to get started in this course and I hope you guys stick around and follow along with the course and learn this amazing programming language
+Anyway, I'm super-pumped to be teaching you guys Python. I can't wait to get started in this course, and I hope you guys stick around and follow along with the course and learn this amazing programming language.
 
 
 
